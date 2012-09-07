@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.eclipse.hudson.plugins</groupId>
+        <artifactId>hudson-plugin-parent</artifactId>    
+        <version>3.0.0-RC2</version>
+    </parent>
+
+    <groupId>org.hudsonci.plugins</groupId>
+    <artifactId>downstream-buildview</artifactId>
+    <name>Hudson Downstream build view</name>
+    <version>1.9-h-1-SNAPSHOT</version>
+  
+    <packaging>hpi</packaging>
+
+    <description>
+        This plug-in allows you to view the full status all the downstream builds 
+        so that we can graphically see that everything for this build has been completed successfully.
+    </description>
+  
+    <url>http://wiki.hudson-ci.org/display/HUDSON/Downstream+buildview+plugin</url>
+    
+    <properties>
+        <hudsonTags>report</hudsonTags>
+    </properties>
+  
+    <licenses>
+        <license>
+            <name>The MIT license</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/hudson3=plugins/downstream-buildview-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:hudson3=plugins/downstream-buildview-plugin.git</developerConnection>
+        <url>https://github.com/hudson3=plugins/downstream-buildview-plugin</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>wjprakash</id>
+            <name>Winston Prakash</name>
+            <email>winston.prakash@gmail.com</email>
+            <roles>
+                <role>
+                    Maintainer
+                </role>
+            </roles>
+        </developer>
+        <developer>
+            <id>shinodkm</id>
+            <name>Shinod Mohandas</name>
+            <email>shinodkm@gmail.com</email>
+            <url>http://in.linkedin.com/in/shinodkm</url>
+            <organization>Ushus Technologies</organization>
+            <organizationUrl>http://www.ushustech.com/</organizationUrl>
+            <timezone>+5:30</timezone>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Rajesh Nair</name>
+            <email>rajesh.nair.mit@gmail.com</email>
+            <organization>Ushus technologies</organization>
+            <organizationUrl>http://www.ushustech.com/</organizationUrl>
+            <timezone>+5:30</timezone>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+  
+    <organization>
+        <name>Ushus Technologies</name>
+        <url>http://www.ushustech.com/</url>
+    </organization>
+  
+    <build>
+        <defaultGoal>package</defaultGoal>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+
+</project>
